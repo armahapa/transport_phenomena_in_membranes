@@ -316,7 +316,7 @@ do k=1,P
          azeP(i,j)=-(2.d0/dx**2.d0+2.d0/dy**2.d0)
          rZe=(sig(i+1,j)-2.d0*sig(i,j)+sig(i-1,j))/dx**2.d0+   &
         (sig(i,j+1)-2.d0*sig(i,j)+sig(i,j-1))/dy**2.d0
-         Sze(i,j)=D5*rZe-D8*shst(i,j) +  &
+         Sze(i,j)=D5*rZe+D8*shst(i,j) +  &
     D6*zeta(i,j)*(2.d0*fc*sig(i,j)*(DLOG(abs(sig(i,j)/bsig_s))-1.d0)+  & 
     D7*(sig(i,j))**2.d0)+  &
     D8*zeta(i,j)*lam(i,j)
