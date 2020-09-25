@@ -5,7 +5,7 @@
 !
 ! For details of the model, refer to:
 ! "Transport phenomena in fluid films with curvature elasticity" by Mahapatra et al.
-! (add arxiv link here when it is available)
+! (https://arxiv.org/abs/2001.07539)
 !-----------------------------------------------------------------------------------------------------------------
 program sumingup
 implicit none
