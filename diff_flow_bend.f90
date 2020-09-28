@@ -451,7 +451,7 @@ if (k>1)then
           do j=1,M
 Ssi(i,j)=D10*sig(i,j)*(zeta(i,j)*(D6*(2.d0*sig(i,j)*(DLOG(abs(sig(i,j)/bsig_s))-1.d0)+ & 
            D7*(sig(i,j))**2.d0)+  &
-           D8*lam(i,j))+D9-D8*shst(i,j))-sigp(i,j)/dt+D11*w(i,j)*zeta(i,j)*sig(i,j) + &
+           D8*lam(i,j))+D9+D8*shst(i,j))-sigp(i,j)/dt+D11*w(i,j)*zeta(i,j)*sig(i,j) + &
            -D7*((sig(i+1,j)-sig(i-1,j))**2.d0/(4.d0*dx**2.d0)+  & 
            (sig(i,j+1)-sig(i,j-1))**2.d0/(4.d0*dy**2.d0)) + &
            D10*((sig(i+1,j)-sig(i-1,j))*(zeta(i+1,j)-zeta(i-1,j))/(4.d0*dx**2.d0)+  & 
