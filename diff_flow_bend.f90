@@ -49,9 +49,9 @@ PI=2.D0*DASIN(1.D0)
 !! basic non dimensional number
 D6=L**2.d0*kBT*sig0/kp        !!! C
 D10=kp*ell/(kBT*L)       !!! B
-D8=2.d0*L**2.d0*lam0/kp            !!! T_f
+D8=2.d0*L**2.d0*lam0/kp            !!! T
 D11=(lam0*L**2.d0)/(nu*D)     !! Pe
-D9=2.d0*L**3.d0*pr/kp              !! P_f
+D9=2.d0*L**3.d0*pr/kp              !! P
 
 
 !!! Derived nondimensional number 
