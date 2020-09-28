@@ -47,20 +47,20 @@ L=1000.d0
 PI=2.D0*DASIN(1.D0)
 
 !! basic non dimensional number
-D6=L**2.d0*kBT*sig0/kp        !!! C_f
-D7=2.d0*kp*ell**2.d0*sig0/kBT     !!! B_c
+D6=L**2.d0*kBT*sig0/kp        !!! C
+D10=kp*ell/(kBT*L)       !!! B
 D8=2.d0*L**2.d0*lam0/kp            !!! T_f
 D11=(lam0*L**2.d0)/(nu*D)     !! Pe
 D9=2.d0*L**3.d0*pr/kp              !! P_f
 
 
 !!! Derived nondimensional number 
-D1= kp*ell*sig0/(L*lam0)     !!! sqrt(2 C_f B_c)/T_f
-D2=2.d0*(ell)**2.d0*kp*sig0**2.d0/lam0   !!! 2 C_f B_c/ T_f
-D3=kBT*sig0/lam0         !!   2 C_f/ T_f
-D5=2.d0*L*ell*sig0      !! sqrt(2 B_c C_f)
-D10=kp*ell/(kBT*L)       !!! sqrt(B_c/2 C_f)
-
+D1= kp*ell*sig0/(L*lam0)     !!! 2 B C /T
+D2=2.d0*(ell)**2.d0*kp*sig0**2.d0/lam0   !!! 4 C^2 B^2/ T_f
+D3=kBT*sig0/lam0         !!   2 C/ T
+D5=2.d0*L*ell*sig0      !! 2 B C
+!D10=kp*ell/(kBT*L)       !!! sqrt(B_c/2 C_f)
+D7=2.d0*kp*ell**2.d0*sig0/kBT     !!! 2 B^2 C
 !!! When you specify the dimensionless numbers independently
 ! D1= (2.d0*D6*D7)**0.5d0/D8
 ! D2= (2.d0*D6*D7)/D8
