@@ -59,7 +59,6 @@ D1= kp*ell*sig0/(L*lam0)     !!! 2 B C /T
 D2=2.d0*(ell)**2.d0*kp*sig0**2.d0/lam0   !!! 4 C^2 B^2/ T
 D3=kBT*sig0/lam0         !!   2 C/ T
 D5=2.d0*L*ell*sig0      !! 2 B C
-!D10=kp*ell/(kBT*L)       !!! sqrt(B_c/2 C_f)
 D7=2.d0*kp*ell**2.d0*sig0/kBT     !!! 2 B^2 C
 !!! When you specify the dimensionless numbers independently
 ! D1= 2*D10*D6/D8
